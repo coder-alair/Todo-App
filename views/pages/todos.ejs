@@ -1,0 +1,34 @@
+<%- include('../partials/header') %>
+<head>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <br>
+<h1 align="center">Todo List</h1>
+<br><br>
+<table class="todotable">
+    <% for(var i=0; i<a.length; i++) { %>
+       <tr><td><%= i+1 %> </td> <td><%= a[i].todo %> </td> <td> <%=  a[i].status %></td><td><a href="/delete/<%= a[i]._id %>" id="deletebtn">Delete</a> </td></tr>
+    <% } %>
+    <tr><td><%= i+1 %> </td> <td colspan="2"><input type='text' id='todoAdd' placeholder="Add Todo" required></td><td><a href="#" onclick="addTodo()" id="addbtn">Add Todo</a> </td></tr>
+</table>
+<br><br>
+<script>
+
+function addTodo(){
+  var text=document.getElementById('todoAdd').value;
+  
+  if(text==''){
+    alert('Todo Field is Empty');
+
+  }else{
+  var addbtn=document.getElementById('addbtn');
+
+  addbtn.setAttribute("href", "/add/"+text);
+  alert('Todo Added Successfully');
+ 
+}
+}
+</script>
+</body>
+<%- include('../partials/footer') %>

@@ -1,0 +1,177 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+.header{
+    display:flex;
+}
+
+.headContainer{
+    position:relative;
+    display:inline-block;
+   
+    
+    background-image:linear-gradient(45deg,forestgreen 10%,black ,black,black ,black,black );
+    height:100px;
+    width:70%;
+    border-left: 1px solid white;
+
+}
+
+.headContainer ul{
+   
+    list-style-type: none;
+    margin:0px;
+    padding:20px;
+    overflow:hidden;
+    
+    
+}
+
+.headContainer ul li{
+    display: inline;
+    float: left;
+    font-style: italic;
+    font-size: 30px;
+    
+}
+
+.headContainer ul li a{
+   
+   padding:14px;
+   text-decoration: none;
+   
+   color:white;  
+}
+
+.headContainer ul li a:hover{
+    color:grey;  
+ }
+
+
+body{
+    background-color:rgb(160, 226, 160);
+}
+
+.headContainer input[type="search"]{
+    opacity:0.7;
+    display:inline;
+    position:absolute;
+    float:right;
+
+}
+
+.rightHead{
+    display:inline;
+    float:right;
+    
+    width:30%;
+    padding:20px;
+    background-color:black;
+   border-right: 1px solid white;
+}
+
+.rightHead input[type="search"]{
+    height:35px;
+    width:80%;
+}
+
+.rightHead input[type="submit"]{
+    height:35px;
+    width:19%;
+}
+
+.rightHead input[type="submit"]{
+    background-color:grey;
+    color:white;
+    font-style: italic;
+}
+
+.rightHead input[type="submit"]:hover{
+    background-color:black;
+    color:white;
+    font-style: italic;
+}
+
+.footer{
+    width:100%;
+    height:30px;
+    padding:10px;
+    background-image:linear-gradient(-45deg,forestgreen 10%,black ,black,black ,black,black );
+   
+    color:white;
+    text-align: center;
+    position:fixed;
+    bottom:0px;
+}
+
+.todotable{
+    height:auto;
+    width:80%;
+    margin:auto;
+    border:1px solid black;
+    border-collapse:separate;
+    padding:2rem;
+}
+
+.todotable td{
+    padding:2rem;
+    font-size:1.2rem;
+}
+
+#deletebtn{
+    color:white;
+    text-decoration:none;
+    background-color: red;
+    border:1px solid black;
+    padding:0.3rem;
+}
+
+#addbtn{
+    color:white;
+    text-decoration:none;
+    background-color: green;
+    border:1px solid green;
+    padding:0.3rem;
+}
+
+#deletebtn:hover{
+    color:white;
+    padding:0.4rem;
+    opacity:0.9;
+}
+
+#addbtn:hover{
+    color:white;
+    padding:0.3rem;
+    opacity:0.9;
+}
+
+
+
+
+.todotable td input[type="text"]{
+    width:30%;
+    height:30px;
+}
+
+.todotable td input[type="text"]:focus{
+    width:50%;
+    height:30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
